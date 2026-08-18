@@ -10,7 +10,7 @@
     # client_id
     # name
     # email
-    # Additional attribute -  phone number
+    # Additional attribute -  phone_number
 
 #Behaviour
     # Be able to update their contact details.
@@ -25,10 +25,10 @@
 
 # Key attributes
     # account_id
-    # account type
-    # opening balance
-    # additional attribute - closing balance
+    # account_type
+    # opening_balance
+    # additional attribute - closing_balance
 
 #Key Behaviours
     # Be able to deposit an amount into the account
-    # Be able to withdraw from the account
+    # Be able to withdraw from the account 
