@@ -19,4 +19,9 @@ class Client:
         print(f"Client Email{email}")
         print(f"Client Phone Number{phone_number}")
 
-allan = Client ("1","Allan","allan@gmail.com",042333)
+allan = Client ("1","Allan","allan@gmail.com","042333")
+allan.display_client_info()
+allan.update_email("bananas@gmail.com")
+allan.display_client_info()
+
+
