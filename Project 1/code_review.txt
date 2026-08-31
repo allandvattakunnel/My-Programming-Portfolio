@@ -1,0 +1,27 @@
+As I was ill and missed my first code review, I'll just be recording my initial development and key changes/errors I encountered this week 
+within this text file.
+
+Error 1: Fixing the update_email method for the Client Class.
+    My initial method to update client' emails consisted of defining a new_email parameter, to pass the client's new email address into the method, and then using a print statement to confirm the change as seen below.
+
+    Evidence(Code before the Change)
+    def update_email (self,new_email):
+        print(f"Your email has updated to: {new_email}")
+
+    But what I realised was that the new email address wasn't actually being assigned to the email attribute of Client object. To resolve this I firstly assigned the new_email value to self.email to actually change the email stored within that particular Client object.
+
+    Code after Implementing the Change
+    def update_email (self,new_email):
+        #Assigning the new email value to self.email to store the new email for that specific Client object.
+        self.email = new_email
+        print(f"Your email has updated to: {new_email}")
+    
+    Link to Learning
+    This understanding was developed by understanding how the
+
+
+Change 2:
+In my initial planning for the Accounts class I noticed that 
+
+
+

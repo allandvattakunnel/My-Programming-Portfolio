@@ -1,34 +1,34 @@
 
 
-#--------------------------------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------------------
 # Client Class
 
 # Purpose - The client class will be used to create objects that represent various customers of the financial organisation.
-# The class should store store key client information and contact details. 
+# The class should store store key client information and contact details.
 
-#Key attributes 
-    # client_id
-    # name
-    # email
-    # Additional attribute -  phone_number
+# Key attributes
+# client_id
+# name
+# email
+# Additional attribute -  phone_number
 
-#Behaviour
-    # Be able to update their contact details.
+# Behaviour
+# Be able to update their contact details.
 
-#---------------------------------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------------------------------------
 
 # Account Class
 
-# Purpose -  The account class will be used to create objects that store financial data tied to specific account holders/customers. 
+# Purpose -  The account class will be used to create objects that store financial data tied to specific account holders/customers.
 # There should be a unique identifier to differentiate beteween each account.
 # Key financial figures like opening balance, closing balance should be stored in the Account class.
 
 # Key attributes
-    # account_id
-    # account_type
-    # opening_balance
-    # additional attribute - closing_balance
+# account_id
+# account_type
+# opening_balance
+# additional attribute - closing_balance
 
-#Key Behaviours
-    # Be able to deposit an amount into the account
-    # Be able to withdraw from the account 
+# Key Behaviours
+# Be able to deposit a positive amount into the account.
+# Be able to withdraw a valid amount from the account that doesn't exceed their current balance.
