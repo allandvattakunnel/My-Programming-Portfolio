@@ -8,7 +8,8 @@ Error 1: Fixing the update_email method for the Client Class.
     def update_email (self,new_email):
         print(f"Your email has updated to: {new_email}")
 
-    But what I realised was that the new email address wasn't actually being assigned to the email attribute of Client object. To resolve this I firstly assigned the new_email value to self.email to actually change the email stored within that particular Client object.
+    But what I realised was that the new email address wasn't actually being assigned to the email attribute of Client object. 
+    To resolve this I firstly assigned the new_email value to self.email to actually change the email stored within that particular Client object.
 
     Code after Implementing the Change
     def update_email (self,new_email):
@@ -20,8 +21,13 @@ Error 1: Fixing the update_email method for the Client Class.
     This understanding was developed by understanding how the
 
 
-Change 2:
-In my initial planning for the Accounts class I noticed that 
+Change 2: Removing the closing_balance attribute and replacing it with an attribute that stores the account status.
+
+In my initial planning for the Accounts class I decided to implement a closing balance as my chosen additional attribute.
+This meant that I would seperate the balance into both a current and closing balance. 
+However, after reviewing this and considering what methods I could create with the closing balance, I decided that removing the closing balance attribute and simply updating the current balance according to the user's actions would be less redundant and still perform the same action.
+Hence, I removed the closing balance and decided to add an is_active attribute to track the status of the account(active,frozen,cancelled) to ensure that only active accounts could withdraw and deposit amounts to avoid any fraud.
 
 
 
+# Focused on using the to string conversion correctly - identified that within the to string method, you shouldn't actually print any statements, and if you include a return statement within the
