@@ -27,7 +27,12 @@ class Transaction ():
         self.description = description
 
     def __str__(self):
-        ...
+        return (
+            f"Transaction {self.transaction_id} is a {self.type}"
+            f" and is valued at ${self.amount} and is "
+            f"currently {self.status}. The transaction is "
+            f"for {self.description}."
+            )
 
 
 transaction_1 = Transaction(1, "Purchase", 100, "Buying gift card")
@@ -39,3 +44,4 @@ print(transaction_1.cancel_transaction())
 
 print(transaction_2.cancel_transaction())
 print(transaction_2.status)
+print(transaction_1)
